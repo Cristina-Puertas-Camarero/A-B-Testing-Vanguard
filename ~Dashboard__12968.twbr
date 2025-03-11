@@ -1,0 +1,1645 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0208.0338                               -->
+<workbook original-version='18.1' source-build='2024.3.4 (20243.25.0208.0338)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='DATOS_LIMPIOS_UNIDOS' inline='true' name='federated.119oaq11pd49a91a5kyw20reshp2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DATOS_LIMPIOS_UNIDOS' name='textscan.0falpjw0wswjln1gip0zr0uw8y1p'>
+            <connection class='textscan' directory='C:/Users/Propietario/Documents/IronHack 01/A-B-Testing-Vanguard/DATOS LIMPIOS' filename='DATOS_LIMPIOS_UNIDOS.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0falpjw0wswjln1gip0zr0uw8y1p' name='DATOS_LIMPIOS_UNIDOS.txt' table='[DATOS_LIMPIOS_UNIDOS#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES' separator=','>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='string' name='clnt_tenure_mnth' ordinal='1' />
+            <column datatype='string' name='clnt_age' ordinal='2' />
+            <column datatype='string' name='gendr' ordinal='3' />
+            <column datatype='string' name='num_accts' ordinal='4' />
+            <column datatype='integer' name='bal' ordinal='5' />
+            <column datatype='string' name='Variation' ordinal='6' />
+            <column datatype='string' name='visitor_id' ordinal='7' />
+            <column datatype='string' name='visit_id' ordinal='8' />
+            <column datatype='string' name='process_step' ordinal='9' />
+            <column datatype='datetime' name='date_time' ordinal='10' />
+            <column datatype='string' name='time_diff' ordinal='11' />
+            <column datatype='date' name='date' ordinal='12' />
+            <column datatype='integer' name='time_in_minutes' ordinal='13' />
+            <column datatype='string' name='time_diff_seconds' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visitor_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visitor_id]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>visitor_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date_time]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>date_time</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[time_diff]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>time_diff</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_in_minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_in_minutes]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>time_in_minutes</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_diff_seconds</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[time_diff_seconds]</local-name>
+            <parent-name>[DATOS_LIMPIOS_UNIDOS.txt]</parent-name>
+            <remote-alias>time_diff_seconds</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cálculo1' datatype='real' name='[Calculation_262334734155747334]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([time_diff_seconds])' />
+      </column>
+      <column caption='tasa de finalización' datatype='real' name='[Calculation_262334734166220808]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [process_step] = &apos;confirm&apos; THEN 1 ELSE 0 END) / COUNT([visit_id]) * 100' />
+      </column>
+      <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+      <column caption='DATOS_LIMPIOS_UNIDOS.txt' datatype='table' name='[__tableau_internal_object_id__].[DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1]' role='measure' type='quantitative' />
+      <column datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+      <column datatype='string' name='[visitor_id]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_262334734155747334]' derivation='Avg' name='[avg:Calculation_262334734155747334:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[visit_id]' derivation='CountD' name='[ctd:visit_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[visitor_id]' derivation='CountD' name='[ctd:visitor_id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_262334734166220808]' derivation='User' name='[usr:Calculation_262334734166220808:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusiones (process_step,Variation)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:process_step:nk]' />
+          <groupfilter function='level-members' level='[none:Variation:nk]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.119oaq11pd49a91a5kyw20reshp2].[avg:Calculation_262334734155747334:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.119oaq11pd49a91a5kyw20reshp2].[ctd:visitor_id:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.119oaq11pd49a91a5kyw20reshp2]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.119oaq11pd49a91a5kyw20reshp2].[usr:Calculation_262334734166220808:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.119oaq11pd49a91a5kyw20reshp2].[ctd:visit_id:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='client_id' />
+        <field-sort-custom-order field='clnt_tenure_mnth' />
+        <field-sort-custom-order field='clnt_age' />
+        <field-sort-custom-order field='gendr' />
+        <field-sort-custom-order field='num_accts' />
+        <field-sort-custom-order field='bal' />
+        <field-sort-custom-order field='Variation' />
+        <field-sort-custom-order field='visitor_id' />
+        <field-sort-custom-order field='visit_id' />
+        <field-sort-custom-order field='process_step' />
+        <field-sort-custom-order field='Calculation_262334734166220808' />
+        <field-sort-custom-order field='date_time' />
+        <field-sort-custom-order field='time_diff' />
+        <field-sort-custom-order field='date' />
+        <field-sort-custom-order field='time_in_minutes' />
+        <field-sort-custom-order field='time_diff_seconds' />
+        <field-sort-custom-order field='Calculation_262334734155747334' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='DATOS_LIMPIOS_UNIDOS.txt' id='DATOS_LIMPIOS_UNIDOS.txt_722F0EA5568D44C18E7329A3058C9EE1'>
+            <properties context=''>
+              <relation connection='textscan.0falpjw0wswjln1gip0zr0uw8y1p' name='DATOS_LIMPIOS_UNIDOS.txt' table='[DATOS_LIMPIOS_UNIDOS#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES' separator=','>
+                  <column datatype='integer' name='client_id' ordinal='0' />
+                  <column datatype='string' name='clnt_tenure_mnth' ordinal='1' />
+                  <column datatype='string' name='clnt_age' ordinal='2' />
+                  <column datatype='string' name='gendr' ordinal='3' />
+                  <column datatype='string' name='num_accts' ordinal='4' />
+                  <column datatype='integer' name='bal' ordinal='5' />
+                  <column datatype='string' name='Variation' ordinal='6' />
+                  <column datatype='string' name='visitor_id' ordinal='7' />
+                  <column datatype='string' name='visit_id' ordinal='8' />
+                  <column datatype='string' name='process_step' ordinal='9' />
+                  <column datatype='datetime' name='date_time' ordinal='10' />
+                  <column datatype='string' name='time_diff' ordinal='11' />
+                  <column datatype='date' name='date' ordinal='12' />
+                  <column datatype='integer' name='time_in_minutes' ordinal='13' />
+                  <column datatype='string' name='time_diff_seconds' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='DATOS_LIMPIOS' inline='true' name='federated.10vxklk0rkrain1anxvga1k36e3x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DATOS_LIMPIOS' name='textscan.1qijgng1dwnis60zzrjjn14sd1sj'>
+            <connection class='textscan' directory='C:/Users/Propietario/Documents/IronHack 01/A-B-Testing-Vanguard/DATOS LIMPIOS' filename='DATOS_LIMPIOS.txt' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1qijgng1dwnis60zzrjjn14sd1sj' name='DATOS_LIMPIOS.txt' table='[DATOS_LIMPIOS#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='integer' name='client_id' ordinal='0' />
+            <column datatype='string' name='clnt_tenure_mnth' ordinal='1' />
+            <column datatype='string' name='clnt_age' ordinal='2' />
+            <column datatype='string' name='gendr' ordinal='3' />
+            <column datatype='string' name='num_accts' ordinal='4' />
+            <column datatype='string' name='bal' ordinal='5' />
+            <column datatype='string' name='Variation' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variation]</local-name>
+            <parent-name>[DATOS_LIMPIOS.txt]</parent-name>
+            <remote-alias>Variation</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Balance (agrupación)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='5' formula='[Calculation_262334734135685122]' peg='0' size='208783' />
+      </column>
+      <column caption='Edad' datatype='integer' name='[Calculation_262334734123843584]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([clnt_age])' />
+      </column>
+      <column caption='Antigüedad en meses' datatype='integer' name='[Calculation_262334734134673409]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([clnt_tenure_mnth])' />
+      </column>
+      <column caption='Balance' datatype='integer' name='[Calculation_262334734135685122]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([bal])' />
+      </column>
+      <column caption='Nº de cuentas' datatype='integer' name='[Calculation_262334734141722628]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT([num_accts])' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Edad (agrupación)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Calculation_262334734123843584]' peg='0' size='5.26' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Nº de cuentas (agrupación)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Calculation_262334734141722628]' peg='0' size='1.226' />
+      </column>
+      <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+      <column caption='DATOS_LIMPIOS.txt' datatype='table' name='[__tableau_internal_object_id__].[DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177]' role='measure' type='quantitative' />
+      <column caption='Bal' datatype='string' name='[bal]' role='dimension' type='nominal' />
+      <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Clnt Age' datatype='string' name='[clnt_age]' role='dimension' type='nominal' />
+      <column caption='Clnt Tenure Mnth' datatype='string' name='[clnt_tenure_mnth]' role='dimension' type='nominal' />
+      <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+      <column caption='Num Accts' datatype='string' name='[num_accts]' role='dimension' type='nominal' />
+      <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gendr:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;U&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Variation:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Test&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Control&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='client_id' />
+        <field-sort-custom-order field='clnt_tenure_mnth' />
+        <field-sort-custom-order field='Calculation_262334734134673409' />
+        <field-sort-custom-order field='clnt_age' />
+        <field-sort-custom-order field='Calculation_262334734123843584' />
+        <field-sort-custom-order field='gendr' />
+        <field-sort-custom-order field='num_accts' />
+        <field-sort-custom-order field='Calculation_262334734141722628' />
+        <field-sort-custom-order field='bal' />
+        <field-sort-custom-order field='Calculation_262334734135685122' />
+        <field-sort-custom-order field='Variation' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='DATOS_LIMPIOS.txt' id='DATOS_LIMPIOS.txt_590B97746A8247C7830795251E105177'>
+            <properties context=''>
+              <relation connection='textscan.1qijgng1dwnis60zzrjjn14sd1sj' name='DATOS_LIMPIOS.txt' table='[DATOS_LIMPIOS#txt]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='integer' name='client_id' ordinal='0' />
+                  <column datatype='string' name='clnt_tenure_mnth' ordinal='1' />
+                  <column datatype='string' name='clnt_age' ordinal='2' />
+                  <column datatype='string' name='gendr' ordinal='3' />
+                  <column datatype='string' name='num_accts' ordinal='4' />
+                  <column datatype='string' name='bal' ordinal='5' />
+                  <column datatype='string' name='Variation' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Género</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+            <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.10vxklk0rkrain1anxvga1k36e3x].[cnt:client_id:qk]</rows>
+        <cols>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:gendr:nk]</cols>
+      </table>
+      <simple-id uuid='{0BF8DE79-5E32-49F6-AC7E-682EA5683565}' />
+    </worksheet>
+    <worksheet name='Hoja 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS_UNIDOS' name='federated.119oaq11pd49a91a5kyw20reshp2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119oaq11pd49a91a5kyw20reshp2'>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.119oaq11pd49a91a5kyw20reshp2].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{859FB585-0D49-4AC4-9E7F-4CFA33D0EB57}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Edad</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column caption='Edad' datatype='integer' name='[Calculation_262334734123843584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([clnt_age])' />
+            </column>
+            <column caption='Clnt Age' datatype='string' name='[clnt_age]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_262334734123843584]' derivation='None' name='[none:Calculation_262334734123843584:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <reference-line axis-column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Calculation_262334734123843584:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Calculation_262334734123843584:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Calculation_262334734123843584:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4C298AA5-F466-420F-B2A2-883E5EB9FFE9}' />
+    </worksheet>
+    <worksheet name='Hoja 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Antigüedad en meses</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column caption='Antigüedad en meses' datatype='integer' name='[Calculation_262334734134673409]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([clnt_tenure_mnth])' />
+            </column>
+            <column-instance column='[Calculation_262334734134673409]' derivation='Avg' name='[avg:Calculation_262334734134673409:qk]' pivot='key' type='quantitative' />
+            <column caption='Clnt Tenure Mnth' datatype='string' name='[clnt_tenure_mnth]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#4e79a7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734134673409:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>150/12 = </run>
+                <run bold='true' fontcolor='#000000' fontsize='16'>12,5 años </run>
+                <run fontcolor='#787878'>Prom. Antigüedad en meses:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734134673409:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='2.1988949775695801' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{87A395EE-CDD7-466D-B020-3F9AAFF2ED3F}' />
+    </worksheet>
+    <worksheet name='Hoja 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Balance</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column aggregation='None' datatype='integer' name='[Balance (agrupación)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='5' formula='[Calculation_262334734135685122]' peg='0' size='208783' />
+            </column>
+            <column caption='Balance' datatype='integer' name='[Calculation_262334734135685122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([bal])' />
+            </column>
+            <column caption='Bal' datatype='string' name='[bal]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_262334734135685122]' derivation='Count' name='[cnt:Calculation_262334734135685122:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Balance (agrupación)]' derivation='None' name='[none:Balance (agrupación):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Balance (agrupación):qk]' included-values='in-range'>
+            <min>0</min>
+            <max>4</max>
+          </filter>
+          <slices>
+            <column>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Balance (agrupación):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.10vxklk0rkrain1anxvga1k36e3x].[cnt:Calculation_262334734135685122:qk]</rows>
+        <cols>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Balance (agrupación):qk]</cols>
+        <show-full-range>
+          <column>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Balance (agrupación):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{CDAE0C32-F9CF-454F-96B5-9D98816EE89D}' />
+    </worksheet>
+    <worksheet name='Hoja 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Nº de cuentas </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column caption='Nº de cuentas' datatype='integer' name='[Calculation_262334734141722628]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([num_accts])' />
+            </column>
+            <column aggregation='None' datatype='integer' name='[Nº de cuentas (agrupación)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Calculation_262334734141722628]' peg='0' size='1.226' />
+            </column>
+            <column-instance column='[Calculation_262334734141722628]' derivation='Count' name='[cnt:Calculation_262334734141722628:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Nº de cuentas (agrupación)]' derivation='None' name='[none:Nº de cuentas (agrupación):qk]' pivot='key' type='quantitative' />
+            <column caption='Num Accts' datatype='string' name='[num_accts]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='741' />
+                <format attr='maxwidth' value='741' />
+                <format attr='minheight' value='721' />
+                <format attr='maxheight' value='721' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10vxklk0rkrain1anxvga1k36e3x].[cnt:Calculation_262334734141722628:qk]</rows>
+        <cols>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Nº de cuentas (agrupación):qk]</cols>
+        <show-full-range>
+          <column>[federated.10vxklk0rkrain1anxvga1k36e3x].[Nº de cuentas (agrupación)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B955023A-D81C-4A7C-9F45-4CA6A3EDE13F}' />
+    </worksheet>
+    <worksheet name='Hoja 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Comparativa, de tiempo en cada paso ( en segundos)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS_UNIDOS' name='federated.119oaq11pd49a91a5kyw20reshp2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119oaq11pd49a91a5kyw20reshp2'>
+            <column caption='Cálculo1' datatype='real' name='[Calculation_262334734155747334]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([time_diff_seconds])' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_262334734155747334]' derivation='Avg' name='[avg:Calculation_262334734155747334:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[visit_id]' derivation='CountD' name='[ctd:visit_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column datatype='string' name='[time_diff_seconds]' role='dimension' type='nominal' />
+            <column datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.119oaq11pd49a91a5kyw20reshp2].[none:Variation:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Variation:nk]' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.119oaq11pd49a91a5kyw20reshp2].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119oaq11pd49a91a5kyw20reshp2].[ctd:visit_id:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119oaq11pd49a91a5kyw20reshp2].[avg:Calculation_262334734155747334:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.119oaq11pd49a91a5kyw20reshp2].[none:Variation:nk] * ([federated.119oaq11pd49a91a5kyw20reshp2].[ctd:visit_id:qk] + [federated.119oaq11pd49a91a5kyw20reshp2].[avg:Calculation_262334734155747334:qk]))</rows>
+        <cols>[federated.119oaq11pd49a91a5kyw20reshp2].[none:process_step:nk]</cols>
+      </table>
+      <simple-id uuid='{7F1F6112-F1C9-47E4-8126-C97ED9E4ED50}' />
+    </worksheet>
+    <worksheet name='Hoja 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Edad promedio en ambos grupos</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column caption='Edad' datatype='integer' name='[Calculation_262334734123843584]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([clnt_age])' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_262334734123843584]' derivation='Avg' name='[avg:Calculation_262334734123843584:qk]' pivot='key' type='quantitative' />
+            <column caption='Clnt Age' datatype='string' name='[clnt_age]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Variation:nk]' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734123843584:qk]' />
+              <text column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]' />
+              <color column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{35C59FA8-F7CB-43DE-A32E-D4E52039C251}' />
+    </worksheet>
+    <worksheet name='Hoja 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Balance promedio entre grupos</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column caption='Balance' datatype='integer' name='[Calculation_262334734135685122]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([bal])' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_262334734135685122]' derivation='Avg' name='[avg:Calculation_262334734135685122:qk]' pivot='key' type='quantitative' />
+            <column caption='Bal' datatype='string' name='[bal]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Variation:nk]' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734135685122:qk]</rows>
+        <cols>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{910374E5-EA3F-4D1A-88F2-456597051995}' />
+    </worksheet>
+    <worksheet name='Hoja 9'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Antigüedad y número de cuentas en promedio en cada grupo</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='DATOS_LIMPIOS' name='federated.10vxklk0rkrain1anxvga1k36e3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10vxklk0rkrain1anxvga1k36e3x'>
+            <column caption='Antigüedad en meses' datatype='integer' name='[Calculation_262334734134673409]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([clnt_tenure_mnth])' />
+            </column>
+            <column caption='Nº de cuentas' datatype='integer' name='[Calculation_262334734141722628]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT([num_accts])' />
+            </column>
+            <column datatype='string' name='[Variation]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_262334734134673409]' derivation='Avg' name='[avg:Calculation_262334734134673409:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_262334734141722628]' derivation='Avg' name='[avg:Calculation_262334734141722628:qk]' pivot='key' type='quantitative' />
+            <column caption='Clnt Tenure Mnth' datatype='string' name='[clnt_tenure_mnth]' role='dimension' type='nominal' />
+            <column-instance column='[Variation]' derivation='None' name='[none:Variation:nk]' pivot='key' type='nominal' />
+            <column caption='Num Accts' datatype='string' name='[num_accts]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Variation:nk]' />
+              <groupfilter function='member' level='[none:Variation:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734141722628:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734134673409:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734141722628:qk] + [federated.10vxklk0rkrain1anxvga1k36e3x].[avg:Calculation_262334734134673409:qk])</rows>
+        <cols>[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]</cols>
+      </table>
+      <simple-id uuid='{A8B4EEF8-5D64-424C-BEC1-A7AB39F218FD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{615E5B60-1520-4AAA-969D-A1AC80E73E4B}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Demografia_clientes_Vanguard'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='8' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='49000' id='3' name='Hoja 1' w='49439' x='49761' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='5' name='Hoja 2' w='48961' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49000' id='6' name='Hoja 3' w='14300' x='800' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24500' id='7' name='Hoja 4' w='84100' x='15100' y='74500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24500' id='11' name='Hoja 5' w='84100' x='15100' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='49000' id='5' is-fixed='true' name='Hoja 2' w='48961' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Hoja 1' w='49439' x='49761' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='6' is-fixed='true' name='Hoja 3' w='14300' x='800' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24500' id='11' is-fixed='true' name='Hoja 5' w='84100' x='15100' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24500' id='7' is-fixed='true' name='Hoja 4' w='84100' x='15100' y='74500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{49E4AB13-1BCD-4C46-800D-1D2301BB95EC}' />
+    </dashboard>
+    <dashboard name='Historia 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{51F716B3-4EE9-4AF9-829C-010D07D2923C}' />
+    </dashboard>
+    <dashboard name='Historia 2' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone fixed-size='814' h='84440' id='5' is-fixed='true' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{DF7FE4A7-F4EE-4A67-A39F-66985CC11E8C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='51'>
+    <window class='worksheet' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{24861E71-9930-41B4-8167-2D605CC962D5}' />
+    </window>
+    <window class='worksheet' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{405E7968-E261-45EE-88A3-88ED82F1F49D}' />
+    </window>
+    <window class='worksheet' name='Hoja 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B23172C-45D4-49D3-A816-DBE768DDA5E8}' />
+    </window>
+    <window class='worksheet' name='Hoja 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card param='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Balance (agrupación):qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7947FADE-C723-499F-803C-EF50E7DDDB58}' />
+    </window>
+    <window class='worksheet' name='Hoja 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1E6FA89C-C4F5-44BB-AEB7-9ED7D4B0F251}' />
+    </window>
+    <window class='dashboard' name='Demografia_clientes_Vanguard'>
+      <viewpoints>
+        <viewpoint name='Hoja 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 3' />
+        <viewpoint name='Hoja 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A9D206BB-4BCD-4DE6-98EB-63C2F03D54A1}' />
+    </window>
+    <window class='worksheet' name='Hoja 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.10vxklk0rkrain1anxvga1k36e3x].[none:Variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3D45BAAE-E362-4ABF-AC08-15B5BF199864}' />
+    </window>
+    <window class='worksheet' name='Hoja 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BC12AD9D-A881-41D7-8C8D-9543634A1D68}' />
+    </window>
+    <window class='worksheet' name='Hoja 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{59DB7105-C3AD-40F2-916A-03AB473219DC}' />
+    </window>
+    <window class='worksheet' name='Hoja 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DF21BBB-C2E9-4A3B-96C7-049DAF633B7C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Hoja 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28DB373B-BD5C-4782-A2B7-89467BD6DB6F}' />
+    </window>
+    <window class='dashboard' name='Historia 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{B9350BC8-9474-411A-9A9D-711E74D27869}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{48CD51BE-62F8-49C8-85E1-B76F9780B52A}' />
+    </window>
+    <window class='dashboard' name='Historia 2'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{1270FEEC-FCB0-4C33-B0D4-A12D8DA237FD}' />
+    </window>
+  </windows>
+</workbook>
