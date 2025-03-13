@@ -24,7 +24,6 @@ Para una mejor organización y manejo de los datos, hemos dividido los archivos 
 - **DATOS:** Contiene los archivos CSV originales con los datos sin procesar.
 - **Datos limpios:** Incluye los archivos CSV que han sido procesados y limpiados para su uso en el análisis.
 
-
 ### Contexto
 
 En un mundo digital en constante evolución, los clientes de Vanguard también cambian. Vanguard consideró que una IU mejorada, acompañada de señales contextuales (mensajes, sugerencias o instrucciones proporcionadas directamente a los usuarios en el contexto de su tarea actual), podría hacer que el proceso en línea fuera más sencillo y eficiente para los clientes.
@@ -84,7 +83,7 @@ Evaluar si el nuevo diseño conduce a una mejor experiencia de usuario y mayores
   **Conclusión:** El nuevo diseño tiene una mayor tasa de errores, lo que sugiere problemas de usabilidad.
 
 **Duración Promedio por Paso**
-```plaintext
+
 Proceso       | Duración Promedio Test | Duración Promedio Control
 ------------- | ---------------------- | -------------------------
 Confirmación  | 59.15                  | 68.79
@@ -95,9 +94,9 @@ Paso 3        | 67.54                  | 65.71
 
 **Conclusión:** Los tiempos varían entre los pasos del proceso, con algunos pasos siendo más rápidos en el grupo de prueba y otros más rápidos en el grupo de control.
 
-### **Conclusión General**
-El nuevo diseño (Test) ha mejorado la tasa de finalización, pero presenta una mayor tasa de errores y una diferencia en la edad promedio entre los grupos, lo que sugiere un posible sesgo. Sería necesario ajustar el diseño para mejorar la usabilidad y asegurar una asignación más equitativa de los clientes.
+### Conclusión General
 
+El nuevo diseño (Test) ha mejorado la tasa de finalización, pero presenta una mayor tasa de errores y una diferencia en la edad promedio entre los grupos, lo que sugiere un posible sesgo. Sería necesario ajustar el diseño para mejorar la usabilidad y asegurar una asignación más equitativa de los clientes.
 
 ## Visualización Interactiva
 
@@ -105,6 +104,5 @@ En el desarrollo de este proyecto, hemos utilizado Tableau para crear una serie 
 
 ![Tableau](./imagen.png)
 
-
 ## Contacto
-📧 **Email:** cris.puertascamarero@gmail.com
+📧 **Email:** cris.puertascamarero@gmail.com; https://www.linkedin.com/in/cristina-puertas-camarero-8955a6349/
