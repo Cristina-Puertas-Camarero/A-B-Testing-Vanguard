@@ -92,7 +92,7 @@ Inicio        | 53.19                  | 40.12
 Paso 1        | 22.71                  | 28.47
 Paso 2        | 33.69                  | 31.41
 Paso 3        | 67.54                  | 65.71
- 
+
 **Conclusión:** Los tiempos varían entre los pasos del proceso, con algunos pasos siendo más rápidos en el grupo de prueba y otros más rápidos en el grupo de control.
 
 ### **Conclusión General**
